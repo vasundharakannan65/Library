@@ -1,0 +1,21 @@
+{
+  "name": "my-lib",
+  "version": "0.0.1",
+  "description": "Module of primary components",
+  "scripts": {
+    "transpile": "ngc -p tsconfig.json",     
+    "package": "rollup -c",
+    "build": "npm run transpile && npm run package"
+  },
+  "repository": {     
+    "type": "git",     
+    "url": "git+https://github.com/example/my-package.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
